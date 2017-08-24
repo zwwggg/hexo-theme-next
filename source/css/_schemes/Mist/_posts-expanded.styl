@@ -10,7 +10,7 @@
   }
   .post-eof { display: none; }
 
-  .post { margin-top: 120px; }
+  .post { margin-top: 60px; }
   .post:first-child { margin-top: 0; }
 
   .post-meta {
@@ -52,7 +52,7 @@
     color: $grey-dim;
     background: none;
     border: none;
-    border-bottom: 2px solid $grey-dim;
+    // border-bottom: 2px solid $grey-dim;
     transition-property: border;
 
     +mobile() { font-size: $font-size-small; }
@@ -61,4 +61,14 @@
 
     &:hover { border-bottom-color: $black-deep; }
   }
+}
+
+.post-body-underline:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 1px;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.1);
 }
